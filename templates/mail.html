@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="{% static '/home.css' %}">
+    <title>Carousel and Scrolling Example</title>
+    
+    <!-- Splide CSS and JS -->
+    <!-- Replace the existing Splide script tags with the following -->
+<link href="{% static 'splidejs/4.1.4/dist/css/splide.min.css' %}" rel="stylesheet">
+<script src="{% static 'splidejs/4.1.4/dist/js/splide.min.js' %}"></script>
+<script src="{% static 'splidejs/extension-auto-scroll/0.5.3/dist/js/splide-extension-auto-scroll.min.js' %}"></script>
+
+</head>
+
+<body>
+
+    <div id="main">
+        <nav>
+            <a href="#wrapper">HOME</a>
+            <a href="#para1">ABOUT</a>
+            <a href="#carouselContainer">SKILLS</a>
+            <a href="#container">PROJECT</a>
+            <a href="#CONTACT">CONTACT</a>
+        </nav>
+      </div>
+    <section>
+    <div id="wrapper">
+        <div class="hero">
+         <h1 class="hero__heading">HELLOW</h1><br>
+         <p class="para">WELCOME MY PORTFOLIO AND WELL MYSELF SARVESHVER</p>
+          
+        </div>
+       
+        <div class="hero hero--secondary" aria-hidden="true">
+         <p class="hero__heading">HELLOW</p>
+         <p class="para">WELCOME MY PORTFOLIO AND WELL MYSELF SARVESHVER</p>
+        
+        </div>
+       </div>
+
+
+
+
+
+       <div id="para1">
+            
+        <div id="about">
+            <h1>ABOUT</h1>
+            <h2>,</h2>
+            <p data-bg-color="#353535" data-fg-color="red">"I am a curious and adaptable individual who loves taking up new challenges. I am enthusiastic about exploring the intersections of design and technology. During my educational journey, I discovered my passion for UI/UX design and coding, which led me to pursue a career in this dynamic field."</p>
+        </div></div>
+     </div>
+  </div>
+    </section>
+
+
+
+    <div id="carouselContainer">
+        <div class="splide">
+          <div class="splide__track splide__track-1 ">
+            <ul class="splide__list">
+              <li class="splide__slide">SARVESHVER *</li>
+              <li class="splide__slide"> A DESIGNER *</li>
+           
+              <li class="splide__slide">AND A *</li>
+              <li class="splide__slide">DEVELOPER*</li>
+           
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+
+ 
+    <div id="container">
+    <div class="marquee-container">
+        <div class="marquee">
+            PYTHON DEVELOPER IOT DEVELOPER UI/UX DESIGNER PYTHON DEVELOPER IOT DEVELOPER UI/UX DESIGNER
+        </div>
+    </div>
+
+   
+   
+     <div class="content-container">
+        <div class="content">
+            <h2> MACHINE LEARNING</h2>
+            <a href="https://github.com/sarveshver/Finding-Phising-Website-Using-ML-Algorithm">
+                <p>The project aims to enhance cybersecurity by developing a system for predicting phishing websites using machine learning algorithms, specifically Random Forest and k-Nearest Neighbors (KNN). The process involves collecting a dataset with labeled examples of phishing and legitimate websites, preprocessing the data, and extracting informative features related to URL structure, content characteristics, and domain information.The models are evaluated using standard metrics, including accuracy, precision, recall, and F1 score, to ensure their effectiveness in generalizing to new, unseen data. Once validated, the models can be deployed in a cybersecurity system, automatically identifying and flagging potentially malicious websites. Continuous monitoring and periodic updates to the models are crucial to adapt to evolving phishing techniques and enhance the system's overall efficacy in detecting emerging threats.</p>
+             </a>
+             </div>
+        <hr>
+        <div class="content">
+            <h2> IOT</h2>
+            <a href="#link1">
+           <p>The IoT Surveillance Cam Robot is a smart, remote-controlled robot designed for monitoring and surveillance applications. This project employs the use of ESP32 and ESP8266 microcontrollers, along with the L298N motor driver, to create a versatile and connected robotic system.
+
+            The ESP32 serves as the main control unit and camera module, providing high-quality imaging capabilities. It connects to a Wi-Fi network, enabling seamless communication with the surrounding environment. The ESP8266, integrated with the L298N motor driver, controls the robot's movements in response to commands received via Wi-Fi.</p>
+        </a>
+        </div>
+        <hr>
+        <div class="content">
+            <h2>IOT</h2>
+            <a href="#link1">
+                <p>The Home Automation System using ESP-32 (Rower) is designed to provide convenient control over household electronic devices. Utilizing the ESP-32 microcontroller, this project offers a robust and efficient solution for home automation. Integration with the Google API enhances user experience by enabling control through a dedicated mobile application.
+
+                    ESP-32 serves as the central hub for connecting and controlling electronic devices within the home. The use of the Rower library enhances the capabilities of ESP-32, making it a powerful tool for managing various appliances and systems.
+                    
+                    The Google API integration allows users to control and monitor their home devices remotely using a mobile application. The application provides an intuitive interface for users to interact with and customize their home automation settings. Through the Google API, users can issue voice commands, schedule tasks, and receive real-time updates on the status of connected devices.
+                    
+                    Key features include the ability to control lighting, temperature, security systems, and other electronic appliances through the ESP-32 microcontroller. </p>
+             </a>
+             </div>
+        <hr>
+        <div class="content">
+            <h2>PYHTON DJANGO</h2>
+            <a href="#link1">
+                <p>The Web Application developed for this project leverages the Django framework to curate and present real-time news data from over 10 top news websites. By integrating the News API, the application aggregates news articles, headlines, and updates, offering users a centralized platform to stay informed.
+
+                    Using Django as the web framework provides a robust structure for managing the backend, handling data processing, and rendering dynamic web pages. The application seamlessly connects to the News API, fetching and organizing news content from a diverse range of reputable sources.
+                    
+                    Key features of the web app include a user-friendly interface for navigating through news categories, personalized preferences, and a visually appealing display of articles. The integration with the News API ensures that the information presented is up-to-date and relevant.</p>
+             </a>
+             </div>
+        <hr>
+        <div class="content">
+            <h2>PYHTON DJNAGO</h2>
+            <a href="#link1">
+                <p>The E-commerce Website developed using the Django framework is a robust and feature-rich platform designed to provide users with a seamless online shopping experience. Leveraging Django's powerful capabilities, the website incorporates essential functionalities for both customers and administrators, ensuring efficient management and secure transactions.
+
+                    Key features of the e-commerce website include a user-friendly interface, product catalog with detailed descriptions, a secure authentication system, and a streamlined checkout process. The Django framework facilitates the implementation of a scalable database model, ensuring efficient storage and retrieval of product information.Administrators benefit from an easy-to-use backend interface that allows them to manage product listings, track orders, and analyze user data. The Django admin panel streamlines administrative tasks, providing a centralized hub for overseeing various aspects of the e-commerce platform.</p>
+             </a>
+             </div>
+    </div>
+</div>
+<div id="CONTACT">
+    <div class="containers">
+    <div class="left-column">
+        <h1>Let's Get In Touch</h1>
+    </div>
+    <div class="right-column">
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="group">
+                <input type="text" name="subject" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Subject</label>
+            </div>
+
+            <div class="group">
+                <textarea name="message" required></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Message</label>
+            </div>
+
+            <div class="group">
+                <input type="email" name="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <button type="submit" class="btn">Send Mail</button>
+
+        </form>
+    </div>
+</div>
+</div>
+
+
+</div>
+<div class="footer">
+    <div class="signature">
+        Sarvesh Ver
+    </div>
+    <div class="links">
+        <a href="https://github.com/sarveshver" target="_blank"> Git</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/sarveshver1620/" target="_blank"> LinkedIn</a>
+        <span>|</span>
+        <a href="https://mail.google.com" target="_blank"> Gmail</a>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.9.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.3"></script>
+    <!-- GSAP Animation Library -->
+<script src="{% static 'path/to/gsap/3.9.2/dist/gsap.min.js' %}"></script>
+<script src="{% static 'path/to/gsap/3.9.2/dist/ScrollTrigger.min.js' %}"></script>
+
+
+    <script>
+        // GSAP Animation
+        gsap.to('.marquee', {
+            x: '-50%',
+            duration: 40, // Adjust the duration as needed
+            repeat: -1, // Infinite loop
+            ease: 'linear'
+        });
+
+        const mytext = new SplitType('#mytext');
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.2,
+            duration: 0.1,
+        });
+        const hero = document.querySelector('.hero--secondary');
+
+        window.addEventListener('mousemove', (e) => {
+        const { clientX, clientY } = e;
+        const x = Math.round((clientX / window.innerWidth) * 100);
+        const y = Math.round((clientY / window.innerHeight) * 100);
+    
+        hero.style.setProperty('--x', `${x}%`);
+        hero.style.setProperty('--y', `${y}%`);
+      });
+     gsap.to('.marquee', {
+                x: '-50%',
+                duration: 40, // Adjust the duration as needed
+                repeat: -1, // Infinite loop
+                ease: 'linear'
+            });
+
+
+         // Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// Select the <p> element inside the #about div
+const textElement = document.querySelector('#about p');
+
+// Check if the textElement exists
+if (textElement) {
+    const bg = textElement.getAttribute('data-bg-color');
+    const fg = textElement.getAttribute('data-fg-color');
+
+    // Use SplitType to split the text into individual characters
+    const text = new SplitType(textElement, { types: 'chars' });
+
+    // Animate individual characters using GSAP
+    gsap.fromTo(text.chars, {
+        color: bg,
+    }, {
+        color: fg,
+        duration: 0.3,
+        stagger: 0.02,
+        scrollTrigger: {
+            trigger: textElement,
+            start: 'top 60%',
+            end: 'top 20%',
+            scrub: true,
+            markers: false,
+            toggleActions: 'play play reverse reverse'
+        }
+    });
+} else {
+    console.error('Element not found'); // Log an error if the element is not found
+}
+
+   // Your JavaScript code here
+   const carouselElement = document.querySelector("#carouselContainer .splide");
+
+// Initialize a new Splide instance for the carousel
+const splide = new Splide(carouselElement, {
+  type: "loop",
+  drag: true,
+  autoWidth: true,
+  gap: 30,
+  pagination: false,
+  arrows: false,
+});
+
+// Mount the Splide instance
+splide.mount(window.splide.Extensions);
+
+// GSAP ScrollTrigger configuration
+gsap.registerPlugin(ScrollTrigger);
+
+const scrollDirection = () => (window.scrollY > 0 ? -1 : 1);
+
+
+
+    </script>
+   
+    
+</body>
+</html>
