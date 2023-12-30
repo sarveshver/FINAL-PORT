@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'web.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
       
-        conn_helth_checks=True,
+        conn_health_checks=True,
         conn_max_age=600,
     ),
 }
