@@ -11,13 +11,12 @@ TEMPLATES_DIRS=os.path.join(BASE_DIR,'templates')
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-88^#78#pekhdf3n847m!c+p_+!5esl^=c9tx+o+malhrr+oe))'
+SECRET_KEY = os.environ.get('SECRET_KEY', default='20219991622000')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
-
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -47,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://*']
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 
@@ -75,25 +74,14 @@ WSGI_APPLICATION = 'web.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'juat_a_db_user',
-        'USER': 'postgres',
-        'PASSWORD': 'FNI1Yj4b8mZwUdMjRNZsWAGt2ohM4Fjo',
-        'HOST':'dpg-cm7uk47qd2ns73f5o420-a',
-        'PORT':'5432',
-    }
-}
-
 
 
 DATABASES = {
     'default': dj_database_url.config(
       
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
+        conn_helth_checks=True,
+        conn_max_age=600,
+    ),
 }
 DATABASES["default"]=dj_database_url.parse("postgres://juat_a_db_user:FNI1Yj4b8mZwUdMjRNZsWAGt2ohM4Fjo@dpg-cm7uk47qd2ns73f5o420-a.oregon-postgres.render.com/juat_a_db")
 
