@@ -17,8 +17,8 @@ def sample(request):
         contact.save()
 
         # Send mail with text and PDF attachment
-        subject = 'Your Subject Here'
-        message = 'Your text message here.'
+        subject = 'Hy their '
+        message = 'thankyou for giving your time to explore my portal i attached my resume right below if you have any query contact me.'
 
         # Render the text message as HTML
         html_message = render_to_string('sam.html', {'message': message})
@@ -46,7 +46,6 @@ def sample(request):
         # Send the email
         email_message.send()
 
-        # Attach the PDF file (replace 'your_pdf_file.pdf' with the actual file path)
        
 
         # Send the email
