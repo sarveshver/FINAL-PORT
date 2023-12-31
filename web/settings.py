@@ -3,7 +3,6 @@ from pathlib import Path
 import os
 import sys
 import dj_database_url
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -134,6 +133,8 @@ if not DEBUG:
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -142,5 +143,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True  # Use TLS for secure connection
 
 DEFAULT_FROM_EMAIL = 'sarveshver77@gmail.com'
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = 'sarveshver77@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'hpqc dxso nmgx znqv'
