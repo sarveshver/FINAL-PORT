@@ -50,6 +50,5 @@ def sample(request):
 
         # Send the email
         email_message.send()
-
-        return HttpResponse('send')
+        return render(request, 'sam.html')
     return render(request, 'mail.html')
