@@ -3,6 +3,7 @@ from pathlib import Path
 import os
 import sys
 import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -141,5 +142,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True  # Use TLS for secure connection
 
 DEFAULT_FROM_EMAIL = 'sarveshver77@gmail.com'
-EMAIL_HOST_USER = 'sarveshver77@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'hpqc dxso nmgx znqv'
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
