@@ -1,0 +1,18 @@
+.bulb svg {
+    display: block;
+    margin-top: 20%;
+    margin-left: 45%;
+    height: 90px;
+    transform-origin: center top;
+    animation: swing_31 1.3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes swing_31 {
+    0% {
+      transform: rotate(18deg);
+    }
+  
+    100% {
+      transform: rotate(-18deg);
+    }
+  }

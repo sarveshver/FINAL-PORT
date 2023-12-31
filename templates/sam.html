@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/sam.css' %}">
     <title>Document</title>
 </head>
-<style>
-    .bulb svg {
-  display: block;
-  margin-top: 20%;
-  margin-left: 45%;
-  height: 90px;
-  transform-origin: center top;
-  animation: swing_31 1.3s ease-in-out infinite alternate;
-}
 
-@keyframes swing_31 {
-  0% {
-    transform: rotate(18deg);
-  }
-
-  100% {
-    transform: rotate(-18deg);
-  }
-}
-</style>
 <body>
     <div class="bulb">
         <svg width="60pt" height="60pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
