@@ -35,7 +35,7 @@ def sample(request):
         )
 
 
-        pdf_file_path = 'static\pdf\sarveshver (2) (1).pdf'
+        pdf_file_path = 'static/pdf/sarveshver (2) (1).pdf'
         with open(pdf_file_path, 'rb') as file:
             email_message.attach(
                 'sarveshver (2) (1).pdf',  # Attachment name
